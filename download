@@ -1,0 +1,31 @@
+# Server
+PORT=3001
+NODE_ENV=production
+
+# MongoDB
+MONGODB_URI=mongodb+srv://hello_db_user:1J21unLVgNB4zWwK@nexgenpro.qzsayug.mongodb.net/nexgenpro
+
+# JWT
+JWT_SECRET=NexGenPro_JWT_2026_xK9mP3qR7vL2wN5
+
+# HubSpot OAuth
+HUBSPOT_CLIENT_ID=dbb92ce7-45b5-42df-a1e8-5652bd5b2e70
+HUBSPOT_CLIENT_SECRET=your_hubspot_client_secret
+HUBSPOT_REDIRECT_URI=https://thebodyguard.co/auth/hubspot/callback
+
+# Salesforce OAuth
+SALESFORCE_CLIENT_ID=your_salesforce_client_id
+SALESFORCE_CLIENT_SECRET=your_salesforce_client_secret
+SALESFORCE_REDIRECT_URI=https://thebodyguard.co/auth/salesforce/callback
+SALESFORCE_LOGIN_URL=https://login.salesforce.com
+
+# Alerts
+ALERT_EMAIL_FROM=alerts@nexgenpro.org
+ALERT_EMAIL_TO=hello@nexgenpro.org
+SMTP_HOST=smtpout.secureserver.net
+SMTP_PORT=587
+SMTP_USER=hello@nexgenpro.org
+SMTP_PASS=Blue4321#%$&
+
+# Frontend
+FRONTEND_URL=https://thebodyguard.co
