@@ -6,14 +6,14 @@ const rateLimit = require('express-rate-limit');
 const mongoose = require('mongoose');
 const cron = require('node-cron');
 
-const authRoutes = require('./routes/auth');
-const hubspotRoutes = require('./routes/hubspot');
+const authRoutes = require('./auth');
+const hubspotRoutes = require('./hubspot');
 const salesforceRoutes = require('./routes/salesforce');
-const activityRoutes = require('./routes/activity');
-const alertRoutes = require('./routes/alerts');
-const dashboardRoutes = require('./routes/dashboard');
+const activityRoutes = require('./activity');
+const alertRoutes = require('./alerts');
+const dashboardRoutes = require('./dashboard');
 
-const { runAnomalyDetection } = require('./services/anomalyDetection');
+const { runAnomalyDetection } = require('./anomalyDetection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
