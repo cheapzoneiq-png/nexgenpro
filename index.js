@@ -8,7 +8,7 @@ const cron = require('node-cron');
 
 const authRoutes = require('./auth');
 const hubspotRoutes = require('./hubspot');
-const salesforceRoutes = require('./routes/salesforce');
+const salesforceRoutes = require('./salesforce');
 const activityRoutes = require('./activity');
 const alertRoutes = require('./alerts');
 const dashboardRoutes = require('./dashboard');
