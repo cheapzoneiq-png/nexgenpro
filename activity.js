@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { ActivityLog } = require('../models');
-const { requireAuth } = require('../middleware/auth');
+const { ActivityLog } = require('./models');
+const { requireAuth } = require('./auth');
 
 // Get activity log with filters
 router.get('/', requireAuth, async (req, res) => {
