@@ -1,4 +1,4 @@
-const { ActivityLog, Baseline, Alert, Customer } = require('../models');
+const { ActivityLog, Baseline, Alert, Customer } = require('./models');
 const { sendAlert } = require('./alertService');
 
 // Run anomaly detection across all customers
