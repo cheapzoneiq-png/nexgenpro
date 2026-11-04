@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { Alert } = require('./models');
-const { requireAuth } = require('./auth');
 
-router.get('/', requireAuth, async (req, res) => {
+const { requireAuth } = require('./auth');
   try {
     const { severity, resolved, limit = 20 } = req.query;
     const filter = { customerId: req.customerId };
