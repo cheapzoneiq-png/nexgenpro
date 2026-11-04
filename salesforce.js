@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
-const { Customer, ActivityLog } = require('../models');
-const { requireAuth } = require('../middleware/auth');
+const { Customer, ActivityLog } = require('./models');
+const { requireAuth } = require('./auth');
 
 // Generate Salesforce OAuth URL
 router.get('/connect', (req, res) => {
