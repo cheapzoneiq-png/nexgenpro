@@ -6,7 +6,7 @@ const rateLimit = require('express-rate-limit');
 const mongoose = require('mongoose');
 const cron = require('node-cron');
 
-const authRoutes = require('./auth');
+const { requireAuth } = require('./auth');
 const hubspotRoutes = require('./hubspot');
 const salesforceRoutes = require('./salesforce');
 const activityRoutes = require('./activity');
