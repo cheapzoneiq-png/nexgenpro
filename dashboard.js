@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { ActivityLog, Alert, Baseline, Customer } = require('../models');
-const { requireAuth } = require('../middleware/auth');
+const { ActivityLog, Alert, Baseline, Customer } = require('./models');
+const { requireAuth } = require('./auth');
 
 // Main dashboard stats
 router.get('/stats', requireAuth, async (req, res) => {
