@@ -28,7 +28,7 @@ const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100 });
 app.use('/api/', limiter);
 
 // Routes
-app.use('/auth', authRoutes);
+
 app.use('/api/hubspot', hubspotRoutes);
 app.use('/api/salesforce', salesforceRoutes);
 app.use('/api/activity', activityRoutes);
